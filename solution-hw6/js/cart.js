@@ -114,6 +114,8 @@ let cartTotal = 0.00;
     
             displayCart.delete(shoppingCart[i]);
 
+            //Updating cart and local storage after removing an order
+
             const newCart = Array.from(displayCart);
             const cartString =  JSON.stringify(newCart);
             localStorage.setItem("cart", cartString);
