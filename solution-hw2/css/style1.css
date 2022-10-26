@@ -1,0 +1,132 @@
+body {
+    font-family: 'verdana',sans-serif;
+}
+
+/* --------------------------------------- header ---------------------------------------*/
+
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.img-child {
+    width: 35%;
+    height: 35%;
+    padding-right: 20px;
+    flex: 0 1 auto;
+
+}
+
+.nav-child-container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+ hr {
+    border: 2px solid black; 
+    margin-left: 0;
+    margin-right: 0; 
+    
+}
+
+.button-child {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+
+/* Navigation menu buttons */
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+
+
+
+/* --------------------------------------- Product Gallery Page --------------------------------------- */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+
+
+}
+
+
+
+.gallery {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.flavour img {
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+    border: 2px solid black;
+    box-sizing: border-box;
+
+}
+
+.flavour {
+    margin: 0 auto;
+    width: 250px;
+    padding: 5px;
+}
+
+.flavour:hover {
+    background-color: yellow;
+}
+
+.product-container {
+    padding: 20px;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: black; 
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+.p-cost {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.p-underline {
+    display: inline;
+    border-bottom: 1px solid black;
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script defer src="js/rollsData.js"></script>
+    <script  defer src="js/cart.js" ></script>
+    
+  </head>
+  <body>
+
+    <!-- ############### Header ############### -->
+    <header class="header">
+
+      <div class="container">
+
+
+        <div class="img-child">
+          <img src="assets/logo-01.svg" alt="Bun Bun Bakeshop's logo">
+        </div>
+        <div class="nav-child-container">
+
+          <div class="button-child">
+            <input type="button" onclick="window.location.href='index.html'" class="btn" value="PRODUCTS">
+            <input type="button" onclick="window.location.href='index_cart.html'" class="btn" value="CART">
+          </div>
+
+          <hr>
+
+          <h1>Shopping Cart</h1>
+
+        </div>
+
+      </div>  
+
+    </header>
+
+    <!-- ############### Cart ############### -->
+
+    <main>
+      <section>
+        <!-- Items In Cart -->
+
+        <div class="right-align">
+
+          <div class="shopping-cart-container">
+  
+            <div class="cart-display">
+            </div>
+  
+            <hr>
+
+            <!-- Total Amount and Add to Cart Button -->
+          
+            <div class="total">
+              <p>Total</p>
+              <h3>$ 29.94</h3>
+            </div>
+    
+            <div class="button">
+              <input type="button" onclick="window.location.href='index_cart.html'" class="btn2" value="Checkout">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ############### Order template ############### -->
+    <template id = "cart-template">
+
+      <div class="cart-item">
+
+        <div class="order">
+
+          <img src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
+
+          <div class="order-info">
+            <p class="details">Original Cinnamon Roll</p>
+            <p class="glazing">Glazing: Keep Original</p>
+            <p class="pack-size">Pack size: 1</p>
+          </div>
+
+          <h3 class="order-price">$2.49</h3>
+        </div>
+
+        <button class="remove">Remove</button>
+
+      </div>
+    </template>
+  </body>
+</html>

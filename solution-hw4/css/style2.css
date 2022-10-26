@@ -1,0 +1,153 @@
+body {
+    font-family: 'verdana',sans-serif;
+}
+
+/* --------------------------------------- header ---------------------------------------*/
+
+
+.container {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+}
+
+.img-child {
+    width: 35%;
+    height: 35%;
+    padding-right: 20px;
+    flex: 0 1 auto;
+
+}
+
+.nav-child-container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+ hr {
+    border: 2px solid black; 
+    margin-left: 0;
+    margin-right: 0;    
+}
+
+.button-child {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+
+/* --------------------------------------- Buttons --------------------------------------- */
+
+/* Navigation menu buttons */
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+
+/* --------------------------------------- Product Detail Page --------------------------------------- */
+
+.details-container {
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 30px;
+
+
+}
+
+.details-container img {
+    width: 700px;
+    height: 700px;
+    object-fit: fill;
+    border: 2px solid black;
+    box-sizing: border-box;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    
+}
+
+p {
+    font-size: 19px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.add-to-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 8px; 
+}
+
+select {
+    padding: 8px 18px;
+    width: 275px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-family: 'verdana',sans-serif;
+    font-size: 19px;
+}
+
+
+.input {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); /*Changing the arrow style (Reference - https://codesandbox.io/s/custom-css-select-arrow-forked-vnroyn) */
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+ }
+
+ /* Add to cart buttons */
+ 
+ #btn2 {   
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    width: 180px;
+    cursor: pointer;
+
+}

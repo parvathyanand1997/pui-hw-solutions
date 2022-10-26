@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- ############### Header ############### -->
+    <header class="header">
+        <img src="assets/logo-01.svg" alt="Bun Bun Bakeshop's logo">
+        <hr>
+    </header>
+
+    <!-- ############### Navigation menu ############### -->
+    <nav>
+        <div id="buttons">
+          <input type="button" onclick="window.location.href='index.html'" class="btn" value="PRODUCTS">
+          <input type="button" onclick="window.location.href='index_cart.html'" class="btn" value="CART">
+        </div>
+    </nav>
+
+    <!-- ############### Cart ############### -->
+    <section class="footer-space">
+      <!-- Items In Cart -->
+      <div id="shopping-cart">
+        <h1>Shopping Cart</h1>
+  
+        <div class="spacing">
+          <div class="in-cart">
+            <img src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
+            <p class="remove">Remove</p>
+            <p>Original Cinnamon Roll<br>Glazing: Keep Original<br>Pack size: 1</p>
+            <h3>$ 2.49</h3>
+          </div>
+        </div>
+  
+        <div class="spacing">
+          <div class="in-cart">
+            <img src="assets/double-chocolate-cinnamon-roll.jpeg" alt="double-chocolate Cinnamon Roll">
+            <p class="remove">Remove</p>
+            <p>Double-Chocolate Cinnamon Roll<br>Glazing: Milk<br>Pack size: 6</p>
+            <h3>$ 27.45</h3> 
+          </div>
+        </div>
+      </div>
+
+      <!-- Total amount -->
+      <div id="total">
+        <hr>
+        <h3>Total: $29.94</h3>
+        <input type="button" onclick="window.location.href='index_cart.html'" id="btn2" value="Checkout">
+      </div>
+    </section> 
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script defer src="js/app.js"></script>
+  </head>
+
+  <body>
+    <!-- ############### Header ############### -->
+
+    <header class="header">
+
+      <div class="container">
+
+        <div class="img-child">
+          <img src="assets/logo-01.svg" alt="Bun Bun Bakeshop's logo">
+        </div>
+
+        <div class="nav-child-container">
+          <div class="button-child">
+            <input type="button" onclick="window.location.href='index.html'" class="btn" value="PRODUCTS">
+            <input type="button" onclick="window.location.href='index_cart.html'" class="btn" value="CART">
+          </div>
+          <hr>
+          <h1>Original Cinnamon Roll</h1>
+        </div>
+
+      </div>  
+
+    </header>
+      
+      <!-- ############### Product details ############### -->
+
+      <main>
+        <section>
+
+          <div class="details-container">
+            <img class="detail-img" src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
+            <div class="details">
+              <p>Customise our delicious,<br>hand-made cinnamon roll to<br>your liking</p>
+
+              <div class="menu">
+
+              <form action="/action_page.php">
+
+                <label class="formlabel" for="glazeMenu">Glazing:</label>
+              
+                <select name="glazing" class="input" id ="glazeMenu" onchange="glazingChange(this)">
+                </select>
+  
+                <label class="formlabel" for="packMenu">Pack size:</label>
+                <select  name="packsize" class="input" id="packMenu" onchange="packChange(this)"></select>
+              </form>
+
+            </div>  
+            
+            <div class = "add-to-cart">
+
+              <p>$ <span id="price">2.49</span></p>
+              <input type="button" onclick="window.location.href='index_cart.html'" id="btn2" value="Add to Cart">
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

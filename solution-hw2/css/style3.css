@@ -1,0 +1,161 @@
+body {
+    font-family: 'verdana',sans-serif;
+}
+
+/* --------------------------------------- header ---------------------------------------*/
+
+
+.container {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+}
+
+.img-child {
+    width: 35%;
+    height: 35%;
+    padding-right: 20px;
+    flex: 0 1 auto;
+
+}
+
+.nav-child-container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+ hr {
+    border: 2px solid black; 
+    margin-left: 0;
+    margin-right: 0;    
+}
+
+.button-child {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+
+
+/* Navigation menu buttons */
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 23px;
+    margin: 0 auto;
+    border: none;
+    display: block;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+/* --------------------------------------- Shopping Cart Page -------------------------------------- */
+
+.right-align {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    width: 950px;
+    margin: 0 auto;
+
+}
+
+.shopping-cart-container {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 630px;
+}
+
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order img {
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.details {
+    width: 385px;
+    font-size: large;
+}
+
+.remove {
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.total {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 355px;
+}
+.total p {
+    font-size: large;
+
+}
+
+.shopping-cart-container hr {
+    border: 1px solid black;
+
+}
+
+/* checkout button */
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn2 {   
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    width: 150px;
+    cursor: pointer;
+}
