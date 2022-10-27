@@ -145,8 +145,31 @@ class Roll {
 //------------------------------------- HW 6 ----------------------------------
 
 //Array to store orders 
-let cart = [];
+let shoppingCart = [];
 
+//This function is activated when the Add to Cart Button is clicked
+function addToCart() {
+
+    // create a new instance
+    let userSelection = new Roll(rollType, glaze, Packsize, basePrice);
+    
+    // push into the cart
+    shoppingCart.push(userSelection);
+
+
+    // saving the cart to the local storage
+    
+    //converting object to JSON string
+    const cartString = JSON.stringify(shoppingCart);
+
+    //adding to it to local storage with the key "cart"
+    localStorage.setItem("cart", cartString);
+
+    //Displaying the items in local storage
+    console.log(JSON.parse(localStorage.getItem("cart")));
+    
+    
+}
 
 //Checking if the local storage is not full 
 if ((localStorage.getItem("cart")) != null) {
@@ -158,36 +181,7 @@ if ((localStorage.getItem("cart")) != null) {
     //pushing the order objects to the cart array
     for (let i = 0; i < orderObjects.length; i++) {
    
-        cart.push(orderObjects[i]);
+        shoppingCart.push(orderObjects[i]);
     }
 
-}
-
-
-
-function addToCart() {
-
-    // create a new instance
-    let userSelection = new Roll(rollType, glaze, Packsize, basePrice);
-    
-    // push into the cart
-    cart.push(userSelection);
-
-    // save the cart to the local storage
-    saveToLocalStorage();
-}
-
-
-function saveToLocalStorage() {
-
-    //converting object to JSON string
-    const cartString = JSON.stringify(cart);
-
-    //adding to it to local storage with the key "cart"
-    localStorage.setItem("cart", cartString);
-
-    //Displaying the items in local storage
-    console.log(JSON.parse(localStorage.getItem("cart")));
-    
-    
 }
