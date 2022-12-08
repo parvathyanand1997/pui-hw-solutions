@@ -1,0 +1,280 @@
+body {
+    margin:0px;
+}
+
+.group-image {
+
+    width: 100%;
+    height: 49rem;
+    background-image: url(/Assets/bts_proof_teaser_door_ver_all_group.jpeg);
+    background-size: cover;
+
+}
+
+.member-menu-animation {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(45deg, rgba(9,0,36,1) 0%, rgba(78, 10, 97,1) 60%, rgba(43,1,80,1) 100%);
+    padding-bottom: 30px;
+    
+}
+
+.icon {
+
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+}
+
+.member {
+
+    width: 23rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h2 {
+    font-family: 'Stardom', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 80%;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff,0 0 20px #bb56ff,0 0 40px #bb56ff;
+}
+
+.stage-name {
+    font-family: 'Stardom', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    
+}
+
+.full-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+header {
+  width: 100%;
+  background-color:  rgba(39, 2, 94, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  min-height: 60px;
+  padding-top: 8px;
+  background-color: inherit;
+  color: rgba(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  
+}
+
+
+.navList {
+  font-size: 17px;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.navBtn {
+  display: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+/* 3divs for 3line button */
+.navBtn div {
+  width: 30px;
+  height: 2px;
+  margin: 2.5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  transition: all 0.5s ease-in;
+}
+
+.back-button {
+  width:20px;
+}
+
+
+
+ /* ============ SMALL SCREEN STYLES ============= */
+ @media screen and (max-width: 575.98px) {
+
+  nav {
+    padding: 0px;
+    align-items: center;
+    width:100%;
+    
+  }
+
+  .navList {
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: clamp(15px, 7vh, 7vh);
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    padding: 5vh 15vw;
+    background-color: rgba(39, 2, 94, 0.8);
+    font-size: 26px;
+    letter-spacing: 1px;
+    /* backdrop-filter: blur(5px); */
+    transform: translate(100%);
+    transition: transform 0.5s ease-out;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+
+  .navLi {
+    opacity: 0;
+    /* transform: translate(250px, 0); */
+    /* transition: all 0.4s ease-in 0.1s; */
+  }
+
+  /* showing navBtn button */
+  .navBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2.5px;
+  }
+
+
+  
+
+    .group-image {
+        height: 37vh;
+        margin-top:30px;
+    }
+
+    h2 {
+
+        font-size: 2.5rem;
+        
+
+    }
+
+    .icon {
+        width: 20%;
+    }
+
+    .stage-name {
+
+        font-size: 1rem;
+
+    }
+
+    .full-name {
+
+        font-size: 0.6rem;
+
+    }
+
+    .icon-container {
+        flex-wrap: wrap;
+    }
+
+    .member {
+
+        width: 17rem;
+
+    }
+
+    
+
+ }
+
+
+  /* ========== NAVLIST ACTIVATION CLASS ================= */
+  /* used by js */
+  /* toggle navList 'visability' :) */
+  .navActive {
+    transform: translate(0%);
+  }
+  
+  /* ========== LI ELEMENTS JAZZED UP TRANSFORMATION ===========*/
+  /* used by js */
+  /* .fadeIn {
+    opacity: 1;
+    transform: translate(0, 0);
+  } */
+  
+  /* adding keyframe */
+  /* used by js */
+  @keyframes SlideIn {
+    from {
+      opacity: 0;
+      transform: translate(250px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* ========= TOGLE CLASSES TO MAKE 3LINE BUTTON ONTO X =========== */
+  /* used by js */
+  .navBtnToggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  
+  .navBtnToggle .line2 {
+    transform: scale(0) translate(10px, 0);
+  }
+  
+  .navBtnToggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
+
+
+  
