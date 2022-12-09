@@ -6,7 +6,7 @@ body {
 
     width: 100%;
     height: 49rem;
-    background-image: url(/Assets/bts_proof_teaser_door_ver_all_group.jpeg);
+    background-image: url(../Assets/bts_proof_teaser_door_ver_all_group.jpeg);
     background-size: cover;
 
 }

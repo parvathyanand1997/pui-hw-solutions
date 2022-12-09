@@ -14,7 +14,7 @@ body {
 
 .bg {
 
-  background-image: url("./Assets/background.jpg");
+  background-image: url("../Assets/background.jpg");
   display: flex;
   align-items: center;
   background-position: 50% 50%;
