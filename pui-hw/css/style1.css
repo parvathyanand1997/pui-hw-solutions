@@ -1,6 +1,5 @@
 body {
   margin:0px;
-  background-color: purple;
 }
 
 /*Styling the group image banner on the top*/
@@ -38,6 +37,8 @@ body {
   margin: 0 auto;
     
 }
+
+
 /*Flex box grid for icon, name of the bts member and full name */
 .member {
 
@@ -50,7 +51,6 @@ body {
 }
 
 /* title styling */
-
 h1 {
   font-family: 'Stardom', sans-serif;
   text-align: center;
@@ -154,6 +154,8 @@ nav a {
 
 
  /* ============ SMALL SCREEN STYLES ============= */
+
+
  @media screen and (max-width: 575.98px) {
 
   nav {
@@ -175,7 +177,6 @@ nav a {
     background-color: rgba(39, 2, 94, 0.8);
     font-size: 26px;
     letter-spacing: 1px;
-    /* backdrop-filter: blur(5px); */
     transform: translate(100%);
     transition: transform 0.5s ease-out;
     justify-content: flex-start;
@@ -201,7 +202,7 @@ nav a {
   }
 
 
-  h2 {
+  h1 {
     font-size: 2.5rem;    
   }
 
@@ -224,7 +225,6 @@ nav a {
   .member {
     width: 17rem;
   }
-
 
  }
 

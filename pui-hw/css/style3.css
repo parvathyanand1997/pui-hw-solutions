@@ -3,7 +3,7 @@ body {
     background: linear-gradient(45deg, rgba(9,0,36,1) 0%, rgba(78, 10, 97,1) 60%, rgba(43,1,80,1) 100%);
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
 
 }
 
@@ -110,62 +110,66 @@ iframe {
 
 @media screen and (max-width: 575.98px) {
 
+  body {
+    height: 896px;
+  }
 
-    h2 {
-        font-size: 1.5rem;
-    }
 
-    p {
-        width: 60%;
-        font-size: 14px;
-    }
 
-    iframe {
 
-        width: 270px;
-        height: 500px;
-        margin: 30px;
+  h1 {
+     font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  iframe {
+
+    width: 270px;
+    height: 500px;
     
-    }
+  }
       
 
-    nav {
-      padding: 0px;
-      align-items: center;
-      width:100%;
-    }
+  nav {
+    padding: 0px;
+    align-items: center;
+    width:100%;
+  }
   
-    .navList {
-      position: absolute;
-      right: 0px;
-      height: 93vh;
-      top: clamp(15px, 7vh, 7vh);
-      flex-direction: column;
-      gap: 5vh;
-      align-items: center;
-      padding: 5vh 15vw;
-      background-color: rgba(39, 2, 94, 0.8);
-      font-size: 26px;
-      letter-spacing: 1px;
-      /* backdrop-filter: blur(5px); */
-      transform: translate(100%);
-      transition: transform 0.5s ease-out;
-      justify-content: flex-start;
-      margin-top: 5px;
-    }
+  .navList {
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: clamp(15px, 7vh, 7vh);
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    padding: 5vh 15vw;
+    background-color: rgba(39, 2, 94, 0.8);
+    font-size: 26px;
+    letter-spacing: 1px;
+    /* backdrop-filter: blur(5px); */
+    transform: translate(100%);
+    transition: transform 0.5s ease-out;
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
   
   
-    .navLi {
-      opacity: 0;
-    }
+  .navLi {
+   opacity: 0;
+  }
   
-    /* showing navBtn button */
-    .navBtn {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin: 2.5px;
-    }
+  /* showing navBtn button */
+  .navBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2.5px;
+  }
 
 } 
 
