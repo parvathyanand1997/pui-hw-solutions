@@ -1,86 +1,94 @@
 body {
-    margin:0px;
+  margin:0px;
+  background-color: purple;
 }
 
+/*Styling the group image banner on the top*/
 .group-image {
 
-    width: 100%;
-    height: 49rem;
-    background-image: url(../Assets/bts_proof_teaser_door_ver_all_group.jpeg);
-    background-size: cover;
+  width: 100%;
+  height: 49rem;
+  background-image: url(../Assets/bts_proof_teaser_door_ver_all_group.jpeg);
+  background-size: cover;
 
 }
 
+/*Flex box grid for the title and icons*/
 .member-menu-animation {
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 20px;
-    z-index: 1;
-    position: absolute;
-    background: linear-gradient(45deg, rgba(9,0,36,1) 0%, rgba(78, 10, 97,1) 60%, rgba(43,1,80,1) 100%);
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(45deg, rgba(9,0,36,1) 0%, rgba(78, 10, 97,1) 60%, rgba(43,1,80,1) 100%);
+  padding-bottom: 30px;
     
 }
 
+/*Flex box grid for icon placement*/
 .icon {
 
-    width: 55%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
     
 }
-
+/*Flex box grid for icon, name of the bts member and full name */
 .member {
 
-    width: 23rem;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 23rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     
 }
 
-h2 {
-    font-family: 'Stardom', sans-serif;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 80%;
-    text-transform: uppercase;
-    text-shadow: 0 0 5px #fff,0 0 20px #bb56ff,0 0 40px #bb56ff;
+/* title styling */
+
+h1 {
+  font-family: 'Stardom', sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 80%;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #fff,0 0 20px #bb56ff,0 0 40px #bb56ff;
 }
 
+/* Stage Name styling */
 .stage-name {
-    font-family: 'Stardom', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    color: white;
+  font-family: 'Stardom', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
     
 }
 
+/* Full Name styling */
 .full-name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    color: white;
-    font-weight: 300;
-    
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  font-weight: 300;  
 }
 
-
+/* Flex box for member icon, stage name and full name */
 .icon-container {
-    display: flex;
-    justify-content: center;
-    width:100%;
+  display: flex;
+  justify-content: center;
+  width:100%;
 }
 
+/* navigation bar styling */
 header {
   width: 100%;
   background-color:  rgba(39, 2, 94, 0.6);
@@ -88,6 +96,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 
 nav {
   z-index: 4;
@@ -176,8 +185,6 @@ nav a {
 
   .navLi {
     opacity: 0;
-    /* transform: translate(250px, 0); */
-    /* transition: all 0.4s ease-in 0.1s; */
   }
 
   /* showing navBtn button */
@@ -188,48 +195,36 @@ nav a {
     margin: 2.5px;
   }
 
+  .group-image {
+    height: 37vh;
+    margin-top:30px;
+  }
 
-  
 
-    .group-image {
-        height: 37vh;
-        margin-top:30px;
-    }
+  h2 {
+    font-size: 2.5rem;    
+  }
 
-    h2 {
+  .icon {
+    width: 20%;
+  }
 
-        font-size: 2.5rem;
-        
+  .stage-name {
+   font-size: 1rem;
+  }
 
-    }
+  .full-name {
+    font-size: 0.6rem;
+  }
 
-    .icon {
-        width: 20%;
-    }
+  .icon-container {
+    flex-wrap: wrap;
+  }
 
-    .stage-name {
+  .member {
+    width: 17rem;
+  }
 
-        font-size: 1rem;
-
-    }
-
-    .full-name {
-
-        font-size: 0.6rem;
-
-    }
-
-    .icon-container {
-        flex-wrap: wrap;
-    }
-
-    .member {
-
-        width: 17rem;
-
-    }
-
-    
 
  }
 
@@ -237,19 +232,12 @@ nav a {
   /* ========== NAVLIST ACTIVATION CLASS ================= */
   /* used by js */
   /* toggle navList 'visability' :) */
+
+
   .navActive {
     transform: translate(0%);
   }
   
-  /* ========== LI ELEMENTS JAZZED UP TRANSFORMATION ===========*/
-  /* used by js */
-  /* .fadeIn {
-    opacity: 1;
-    transform: translate(0, 0);
-  } */
-  
-  /* adding keyframe */
-  /* used by js */
   @keyframes SlideIn {
     from {
       opacity: 0;
@@ -262,8 +250,8 @@ nav a {
     }
   }
   
-  /* ========= TOGLE CLASSES TO MAKE 3LINE BUTTON ONTO X =========== */
-  /* used by js */
+
+  /* ========= Hamburger menu icon animation =========== */
   .navBtnToggle .line1 {
     transform: rotate(-45deg) translate(-4px, 6px);
   }
@@ -275,6 +263,3 @@ nav a {
   .navBtnToggle .line3 {
     transform: rotate(45deg) translate(-4px, -6px);
   }
-
-
-  

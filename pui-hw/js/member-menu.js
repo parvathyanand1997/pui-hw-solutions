@@ -1,5 +1,5 @@
 
-
+//bodymovin.js player for each icon while hovering
 let rmIcon = document.querySelector('.RM');
 
     let rmAnimation = bodymovin.loadAnimation({
@@ -135,7 +135,7 @@ let jkIcon = document.querySelector('.Jungkook');
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: "https://lottie.host/23eb2faf-f18c-4a5a-913a-2f95b6553840/tElNBRvYdH.json"
+        path: "Assets/Jungkook.json"
     });
     
     let directionMenu7 = 1;
@@ -148,13 +148,15 @@ let jkIcon = document.querySelector('.Jungkook');
         jkAnimation.setDirection(-directionMenu7);
         jkAnimation.play();
     });
-    
-    
 
+
+    //rellax.js variables
     var rellax1 = new Rellax('.header');
     var rellax2 = new Rellax('.icon-container');
     var rellax3 = new Rellax('.bg');
 
+
+    //responsive nav bar
     const navList = document.querySelector('.navList')
     const navBtn = document.querySelector('.navBtn')
     const navLinks = document.querySelectorAll('.navLi')

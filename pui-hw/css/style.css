@@ -4,14 +4,7 @@ body {
   height: 100vh;
 }
 
-.parallax {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  margin: 1px none;
-  flex-direction: column;
-}
-
+/* background image */
 .bg {
 
   background-image: url("../Assets/background.jpg");
@@ -26,7 +19,7 @@ body {
 
 }
 
-
+/* stadium illustration */
 .stadium {
 
   object-fit:cover;
@@ -35,17 +28,16 @@ body {
 }
 
 
-
+/* Title styling */
 .title {
 
   font-family: 'Stardom', sans-serif;
-  font-weight: 700;
-  font-size: 150px;
+  font-size: 100px;
   text-align:center;
   z-index: 0;
   line-height: 80%;
   text-transform: uppercase;
-  width: 500px;
+  width: 75%;
   text-align: center;
   color: #f2d9ff;
   color: #fff;
@@ -55,8 +47,8 @@ body {
   text-shadow: 0 0 5px #fff,0 0 20px #bb56ff,0 0 40px #bb56ff;
 
 }
-
-.pt-2 {
+/* arranging parallax elements with flexbox*/
+.parallax-container {
 
   display: flex;
   flex-direction: column;
@@ -66,18 +58,19 @@ body {
 
 }
 
+/* paragraph styling*/
+
 p {
 
   width: 50%;
   font-family: 'Raleway', sans-serif;
   font-size: 24px; 
-  text-align: justify;
-  text-justify: inter-word;
   color: white;
 
 }
 
-
+/* flexbox layput for written content */
+/* layering text, image and logo over each other for parallax effect*/
 .content {
 
   display: flex;
@@ -85,7 +78,8 @@ p {
   align-items: center;
   position: absolute;
   z-index: 0;
-  top: 75px;
+  top: 100px;
+  
 
 }
 
@@ -109,15 +103,25 @@ p {
 
 }
 
-.footer {
+svg {
+
+  filter: drop-shadow(0 0 15px #f2d9ff);
+  width: 280px;
+  height: 675px;
+
+}
+
+.learnmore {
   z-index: 3;
   padding-bottom: 437px;
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
 }
 
+/* button styling */
 .button {
 
   z-index : 2;
@@ -129,7 +133,7 @@ p {
   font-size: 28px;
   color: #FFFFFF;
   padding: 15px;
-  width: 200px;
+  width: 100%;
   text-align: center;
   transition-duration: 0.4s;
   overflow: hidden;
@@ -137,13 +141,12 @@ p {
 
 }
 
-svg {
-
-  filter: drop-shadow(0 0 15px #f2d9ff);
-  width: 280px;
-  height: 675px;
-
+.button:hover {
+  box-shadow: 0 0 30px #bb56ff;
+  
 }
+
+/* nav bar styling*/
 
 header {
 
@@ -188,6 +191,12 @@ nav a {
   padding-right: 25px;
 
 }
+
+nav a:hover {
+
+  text-shadow: 0 2px 10px #ffffff;
+
+}
   
 .navBtn {
   display: none;
@@ -206,6 +215,7 @@ nav a {
 
 }
 
+/* audio icon styling */
 .song {
   z-index: 4;
   position: fixed;
@@ -217,8 +227,8 @@ nav a {
   margin-top: 50%;
 	justify-content: center;
   
-
 }
+
 .pause {
   cursor: pointer;
   background-color: rgba(39, 2, 94, 0.8);
@@ -236,6 +246,7 @@ nav a {
   margin:5px;
 
 }
+
 
 
   
@@ -260,7 +271,6 @@ nav a {
     background-color: rgba(39, 2, 94, 0.8);
     font-size: 26px;
     letter-spacing: 1px;
-    /* backdrop-filter: blur(5px); */
     transform: translate(100%);
     transition: transform 0.5s ease-out;
     justify-content: flex-start;
@@ -269,24 +279,19 @@ nav a {
 
 
   .navLi {
+    
     opacity: 0;
-    /* transform: translate(250px, 0); */
-    /* transition: all 0.4s ease-in 0.1s; */
+    
   }
 
   /* showing navBtn button */
   .navBtn {
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 2.5px;
-  }
 
-  .parallax {
-    padding: 0;
-    align-items: center;
-    height: 127vh;
-  
   }
 
   .bg { 
@@ -298,16 +303,20 @@ nav a {
   }
 
   .stadium {
+
     padding: 0;
     align-items: center;
+
   }
   
   .title {
-    font-size: 75px;
+
+    font-size: 56px;
     margin-top: 30px;
     margin-top: 10px;
     padding: 0;
     width: 50%;
+
   }
 
   p {
@@ -320,42 +329,42 @@ nav a {
   }
 
   .content {
-
     padding: 0;
     align-items: center;
-
   }
 
   .logo {
-  
-      padding-bottom: 60px;
-      margin: 90px;
+
+    padding-bottom: 60px;
+    margin: 90px;
   
   }
 
-  .footer {
 
+  .learnmore{
     padding: 0;
     align-items: center;
-
-
-  }
-
-  .button {
-
-    border: 2px solid white;
-    font-size: 16px;
-    width: 100px;
-    margin-bottom: 24px;
-    padding: 10px;
-    margin-bottom: 20px;
-
-
+    margin-bottom: 50px;
   }
 
   .intro-2 {
     padding-top: 30px;
   }
+
+  /* button styling */
+
+  .button {
+
+    border: 2px solid white;
+    font-size: 16px;
+    width: 250px;
+    margin-bottom: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+  }
+
+
 
   .image {
     height:460px;
@@ -365,20 +374,16 @@ nav a {
     width:15px;
     height:15px;
     margin:5px;
-  
   }
 
   .song {
     margin-top: 100%;
   }
-  
-
-
-
-
 
 
   
+
+
     
 }
   
@@ -389,15 +394,6 @@ nav a {
     transform: translate(0%);
   }
   
-  /* ========== LI ELEMENTS JAZZED UP TRANSFORMATION ===========*/
-  /* used by js */
-  /* .fadeIn {
-    opacity: 1;
-    transform: translate(0, 0);
-  } */
-  
-  /* adding keyframe */
-  /* used by js */
   @keyframes SlideIn {
     from {
       opacity: 0;
@@ -410,7 +406,7 @@ nav a {
     }
   }
   
-  /* ========= TOGLE CLASSES TO MAKE 3LINE BUTTON ONTO X =========== */
+  /* ========= hamburger menu animation =========== */
   /* used by js */
   .navBtnToggle .line1 {
     transform: rotate(-45deg) translate(-4px, 6px);

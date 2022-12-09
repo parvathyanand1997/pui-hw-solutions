@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    background: linear-gradient(45deg, rgba(9,0,36,1) 0%, rgba(78, 10, 97,1) 60%, rgba(43,1,80,1) 100%);
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* heading styling */
+h1 {
+    font-family: 'Stardom', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 80%;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff,0 0 20px #bb56ff,0 0 40px #bb56ff;
+    margin-top: 120px;
+}
+
+/* paragraph styling*/
+p {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px; 
+    text-align: center;
+    color: white;
+
+}
+
+/* calendar spacing and size*/
+iframe {
+
+    margin: 70px;
+    width: 1000px;
+    height: 800px;
+}
+  
+/* nav bar styling */
+  header {
+
+    width: 100%;
+    background-color: rgba(39, 2, 94, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  nav {
+  
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    min-height: 60px;
+    padding-top: 8px;
+    background-color: inherit;
+    color: rgba(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+      
+  }
+    
+  
+  .navList {
+    font-size: 17px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+  }
+    
+  nav a {
+  
+    color: inherit;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+  
+  }
+    
+  .navBtn {
+    display: none;
+    cursor: pointer;
+  }
+    
+    /* 3divs for 3line button */
+  .navBtn div {
+  
+    width: 30px;
+    height: 2px;
+    margin: 2.5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: all 0.5s ease-in;
+  
+  }
+
+  .back-button {
+    width:20px;
+  }
+  
+
+  /* ============ SMALL SCREEN STYLES ============= */
+
+@media screen and (max-width: 575.98px) {
+
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    iframe {
+
+        width: 270px;
+        height: 500px;
+        margin: 30px;
+    
+    }
+      
+
+    nav {
+      padding: 0px;
+      align-items: center;
+      width:100%;
+    }
+  
+    .navList {
+      position: absolute;
+      right: 0px;
+      height: 93vh;
+      top: clamp(15px, 7vh, 7vh);
+      flex-direction: column;
+      gap: 5vh;
+      align-items: center;
+      padding: 5vh 15vw;
+      background-color: rgba(39, 2, 94, 0.8);
+      font-size: 26px;
+      letter-spacing: 1px;
+      /* backdrop-filter: blur(5px); */
+      transform: translate(100%);
+      transition: transform 0.5s ease-out;
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+  
+  
+    .navLi {
+      opacity: 0;
+    }
+  
+    /* showing navBtn button */
+    .navBtn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 2.5px;
+    }
+
+} 
+
+
+/* ========== NAVLIST ACTIVATION CLASS ================= */
+  /* used by js */
+  /* toggle navList 'visability' :) */
+  .navActive {
+    transform: translate(0%);
+  }
+  
+
+  @keyframes SlideIn {
+    from {
+      opacity: 0;
+      transform: translate(250px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* ========= hamburger menu animation =========== */
+  /* used by js */
+  .navBtnToggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  
+  .navBtnToggle .line2 {
+    transform: scale(0) translate(10px, 0);
+  }
+  
+  .navBtnToggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
