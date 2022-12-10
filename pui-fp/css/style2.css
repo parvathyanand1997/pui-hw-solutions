@@ -76,12 +76,15 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+
 }
   
 
 .overall-container {
+
   display: flex;
   flex-direction: column;
+
 }
 
 .image-text-container .text {
@@ -91,7 +94,9 @@ body {
   font-size: 20px; 
   line-height: 25px;
   align-items: center;
+
 }
+
 /* flexbox layout for playlist */
 
 .playlist-container {
@@ -109,19 +114,23 @@ body {
 
   font-family: 'Stardom',sans-serif;
   font-size: 3rem;
+  text-align: center;
 
 }
 
 /* Nav bar styling */
 header {
+
   width: 100%;
   background-color: rgba(39, 2, 94, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 nav {
+
   z-index: 3;
   position: fixed;
   width: 100%;
@@ -135,18 +144,22 @@ nav {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: baseline;
+
 }
 
 .navList {
+
   font-size: 17px;
   text-transform: uppercase;
   list-style: none;
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+
 }
 
 nav a {
+
   color: inherit;
   text-decoration: none;
   padding-right: 25px;
@@ -155,22 +168,28 @@ nav a {
 }
 
 .navBtn {
+
   display: none;
   cursor: pointer;
+
 }
 
 /* 3divs for 3line button */
 .navBtn div {
+
   width: 30px;
   height: 2px;
   margin: 2.5px;
   background-color: rgb(255, 255, 255);
   border-radius: 2px;
   transition: all 0.5s ease-in;
+
 }
 
 .back-button {
+
   width:20px;
+
 }
 /* hover aniamtion fof nav link */
 nav a:hover {
@@ -189,6 +208,7 @@ nav a:hover {
   }
 
   .navList {
+
     position: absolute;
     right: 0px;
     height: 93vh;
@@ -204,10 +224,13 @@ nav a:hover {
     transition: transform 0.5s ease-out;
     justify-content: flex-start;
     margin-top: 5px;
+
   }
 
   .navLi {
+
     opacity: 0;
+
   }
 
   /* showing navBtn button */
@@ -231,15 +254,18 @@ nav a:hover {
 
   .image-text-container {
     width:100%;
+    padding-bottom: 0px;
   }
   
   #image1, #image2 {
-     width:400px;
+     width:320px;
+
   }
   .image-text-container .text {
     font-size: 15px;
     width: 70%;
   }
+
   
   #memberName {
     font-size: 4rem;

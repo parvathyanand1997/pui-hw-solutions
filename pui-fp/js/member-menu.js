@@ -1,6 +1,9 @@
 
 //bodymovin.js player for each icon while hovering
+//BodyMovin reference - https://codepen.io/useAnimations/pen/YzwPjze
 let rmIcon = document.querySelector('.RM');
+
+
 
     let rmAnimation = bodymovin.loadAnimation({
             container: rmIcon,
