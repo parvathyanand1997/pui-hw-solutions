@@ -104,6 +104,12 @@ iframe {
   .back-button {
     width:20px;
   }
+
+  nav a:hover {
+
+    text-shadow: 0 2px 10px #ffffff;
+  
+  }
   
 
   /* ============ SMALL SCREEN STYLES ============= */
