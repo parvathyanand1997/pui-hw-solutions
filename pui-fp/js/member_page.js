@@ -11,6 +11,9 @@ const membName = params.get("name");
 //console.log(bts[membName]);
 //console.log(document.getElementById("memberName"));
 
+//Page title
+document.querySelector("title").innerText = membName;
+
 //Stage Name
 document.getElementById("memberName").innerText = membName;
 
